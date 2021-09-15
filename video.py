@@ -11,7 +11,7 @@ driver = webdriver.Chrome()
 
 pattern = r'https:\/\/(.*)\.com\.tr'
 
-site = "https://www.twitch.tv/thebausffs"
+site = "https://www.twitch.tv/elwind"
 driver.maximize_window()
 driver.get(site)
 # driver.refresh()
