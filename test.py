@@ -6,6 +6,7 @@ import datetime
 from multiprocessing import Process
 from pynput.keyboard import Key, Controller
 
+# My own version for the recorder
 
 class TwitchRecorder:
     def __init__(self):
@@ -22,15 +23,15 @@ class TwitchRecorder:
     
 
     def RecordStream(self):   
-            self.temp_RecordFile = self.filename
-            subprocess.call(["streamlink", "twitch.tv/" + self.username, self.quality,"-o", self.temp_RecordFile])
+        self.temp_RecordFile = self.filename
+        subprocess.call(["streamlink", "twitch.tv/" + self.username, self.quality,"-o", self.temp_RecordFile])
             
             
 
 
     def SortFolder(self):
         isExist = os.path.exists(self.streamerFolderPath) 
-        if  isExist == False:2
+        if  isExist == False:
             os.mkdir(self.streamerFolderPath)
         else:
             print("There is already a file for this streamer.")
@@ -53,9 +54,6 @@ class TwitchRecorder:
 
         
 
-
-    
-
 if __name__ == '__main__':
     twitch_recorder = TwitchRecorder()
     p1 = Process(target=twitch_recorder.RecordStream)
@@ -64,3 +62,5 @@ if __name__ == '__main__':
     p2.start()
     p1.join()
     p2.join()
+    
+

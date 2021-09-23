@@ -7,6 +7,14 @@ import subprocess
 import datetime
 import getopt
 
+# Github : https://gist.github.com/junian/b41dd8e544bf0e3980c971b0d015f5f6b
+# This code is based on tutorial by slicktechies modified as needed to use oauth token from Twitch.
+# You can read more details at: https://www.junian.net/2017/01/how-to-record-twitch-streams.html
+# original code is from https://slicktechies.com/how-to-watchrecord-twitch-streams-using-livestreamer/
+
+# Not working properly - MEmirAlbayrak
+
+
 class TwitchRecorder:
     def __init__(self):
         # global configuration
