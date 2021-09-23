@@ -138,3 +138,4 @@ dmypy.json
 cython_debug/
 
 ffmpeg-20210728-0068b3d0f0-win64-static/*
+.vscode/*
