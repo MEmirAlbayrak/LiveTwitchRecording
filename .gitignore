@@ -137,4 +137,4 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-ffmpeg-20210728-0068b3d0f0-win64-static/
+ffmpeg-20210728-0068b3d0f0-win64-static/*
