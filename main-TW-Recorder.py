@@ -7,11 +7,13 @@ from multiprocessing import Process
 from pynput.keyboard import Key, Controller
 
 # My own version for the recorder
+# You can record twitch streamers live video with this script
+# but i did t figure out how can i make ffmpeg record every 10sec and move new file to folder.
 
 class TwitchRecorder:
     def __init__(self):
         self.projectFolder_Path = '/Users/TaW/Documents/GitHub/LiveTwitchRecording/'
-        self.ffmpeg_path = '/Users/TaW/Documents/GitHub/LiveTwitchRecording/ffmpeg-20210728-0068b3d0f0-win64-static/bin/ffmpeg.exe'
+        self.ffmpeg_path = '/Users/TaW/Documents/GitHub/LiveTwitchRecording/ffmpeg-20210728-0068b3d0f0-win64-static/bin/ffmpeg.exe'  # ffmpeg exe
 
         self.username = "sylchasie"
         self.quality = "best"

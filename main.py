@@ -1,9 +1,11 @@
 from typing import Optional
-
 from fastapi import FastAPI
 
 app = FastAPI()
 
+# Not started yet becouse of the problem in the main-TW-Recorder
+
+# AWS update will come...
 
 @app.get("/")
 def read_root():

@@ -1,2 +1,3 @@
-# Live Twitch Recording
+# Live Twitch Recording (WIP)
 
+Live twitch recorder with AWS interegation 
