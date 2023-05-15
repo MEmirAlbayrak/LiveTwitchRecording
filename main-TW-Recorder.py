@@ -15,7 +15,7 @@ class TwitchRecorder:
         self.projectFolder_Path = '/Users/TaW/Documents/GitHub/LiveTwitchRecording/'
         self.ffmpeg_path = '/Users/TaW/Documents/GitHub/LiveTwitchRecording/ffmpeg-20210728-0068b3d0f0-win64-static/bin/ffmpeg.exe'  # ffmpeg exe
 
-        self.username = "sylchasie"
+        self.username = "username"
         self.quality = "best"
 
         self.filename = self.username+"_"+self.quality+".mp4"
